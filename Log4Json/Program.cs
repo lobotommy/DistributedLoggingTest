@@ -15,7 +15,7 @@ namespace Log4Json
                 var sw = Stopwatch.StartNew();
                 logger.Debug("Test " + cnt);
                 sw.Stop();
-                Console.WriteLine();
+                Console.WriteLine(sw.ElapsedMilliseconds);
                 Thread.Sleep(1000);
             }
         }
