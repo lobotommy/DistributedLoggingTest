@@ -1,5 +1,5 @@
 ﻿# Playing with distributed logging
-## Results
+## Execution delay time
 UdpAppender -> logstash (localhost), ~10ms
 Redis4net -> redis -> logstash (localhost), ~1ms
 
