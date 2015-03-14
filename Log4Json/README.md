@@ -1,10 +1,14 @@
 ﻿# Playing with distributed logging
+## Results
+UdpAppender -> logstash (localhost), ~10ms
+Redis4net -> redis -> logstash (localhost), ~1ms
 
-## Redis
-###redis-windows: 
+## Config
+### Redis
+####redis-windows: 
 https://github.com/ServiceStack/redis-windows
-### Redis4net
+#### Redis4net
 https://github.com/govin/redis4net/blob/master/README.md
 
-## UdpAppender
+### UdpAppender
 (built-in to log4net)
