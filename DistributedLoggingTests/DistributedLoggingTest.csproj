@@ -63,7 +63,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="README.md" />
     <None Include="LogstashConfigs\redis.cfg" />
     <None Include="LogstashConfigs\udp.cfg" />
   </ItemGroup>
