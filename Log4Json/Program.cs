@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Threading;
 using log4net;
 
-namespace Log4Json
+namespace DistributedLoggingTests
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var logger = LogManager.GetLogger("Logger");
             for (var cnt = 0; cnt < 100; cnt++)
@@ -15,7 +15,7 @@ namespace Log4Json
                 var sw = Stopwatch.StartNew();
                 logger.Debug("Test " + cnt);
                 sw.Stop();
-                Console.WriteLine(sw.ElapsedMilliseconds);
+                Console.WriteLine("Elapsed time: " + sw.ElapsedMilliseconds);
                 Thread.Sleep(1000);
             }
         }
